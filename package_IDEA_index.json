@@ -1,48 +1,50 @@
 {
   "packages": [
     {
-      "name": "CRossRoad LAB",
-      "maintainer": "CrossRoad LAB",
-      "websiteURL": "https://www.crossroadnetwork.org/CrossRoadLAB/",
-      "email": "crossroad.lab@gmail.com",
+      "name": "fortytwosystems",
+      "maintainer": "FortyTwo Systems",
+      "websiteURL": "http://www.fortytwosystems.com/",
+      "email": "dave@fortytwosystems.com",
       "platforms": [
         {
-          "name": "CrossRoad LAB IDEA (32-bits ARM Cortex-M0+)",
+          "name": "FortyTwo Systems SAMC Boards (32-bits ARM Cortex-M0+)",
           "architecture": "samc",
           "version": "%%VERSION%%",
           "category": "Contributed",
           "help": {
-            "online": ""
+            "online": "http://docs.fortytwosystems.com/"
           },
           "url": "https://github.com/fortytwosystems/ArduinoCore-samc/releases/download/v%%VERSION%%/%%FILENAME%%",
           "archiveFileName": "%%FILENAME%%",
           "checksum": "SHA-256:%%CHECKSUM%%",
           "size": "%%SIZE%%",
           "boards": [
-            { "name": "IDEA" }          ],
+            { "name": "FortyTwo Mega" },
+            { "name": "FortyTwo Uno" }
+          ],
           "toolsDependencies": [
             {
-              "packager": "CrossRoad LAB",
+              "packager": "fortytwosystems",
               "name": "gcc-arm-none-eabi",
               "version": "10-2020q4"
             },
             {
-              "packager": "CrossRoad LAB",
+              "packager": "fortytwosystems",
               "name": "bossac",
               "version": "1.9.1-fortytwo-0"
             },
             {
-              "packager": "IDEA",
+              "packager": "arduino",
               "name": "openocd",
               "version": "0.10.0-arduino7"
             },
             {
-              "packager": "CrossRoad LAB",
+              "packager": "fortytwosystems",
               "name": "CMSIS",
               "version": "5.7.0"
             },
             {
-              "packager": "CrossRoad LAB",
+              "packager": "fortytwosystems",
               "name": "CMSIS-Microchip",
               "version": "1.0.0"
             }
